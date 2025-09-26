@@ -1,0 +1,150 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Component Demo</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            margin: 0;
+            padding: 20px;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+        }
+        
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 2.5rem;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .demo-section {
+            margin: 30px 0;
+            padding: 25px;
+            background: #f8f9fa;
+            border-radius: 15px;
+            border-left: 4px solid #667eea;
+        }
+        
+        .demo-section h3 {
+            color: #2c3e50;
+            margin-top: 0;
+            font-size: 1.3rem;
+        }
+        
+        .component-showcase {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+        
+        code {
+            background: #2c3e50;
+            color: #ecf0f1;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 0.9em;
+        }
+        
+        .controls {
+            display: flex;
+            gap: 10px;
+            margin: 20px 0;
+            flex-wrap: wrap;
+        }
+        
+        button {
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+        }
+        
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+        }
+        
+        input, select {
+            padding: 10px 15px;
+            border: 2px solid #e0e6ed;
+            border-radius: 10px;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+        
+        input:focus, select:focus {
+            outline: none;
+            border-color: #667eea;
+            box-shadow: 0 0 10px rgba(102, 126, 234, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🚀 Custom Web Components</h1>
+        
+        <div class="demo-section">
+            <h3>📊 Interactive Progress Card</h3>
+            <p>A custom web component that displays progress with animations and interactions.</p>
+            
+            <div class="component-showcase">
+                <progress-card 
+                    title="JavaScript Skills" 
+                    value="75" 
+                    max="100" 
+                    color="#4CAF50"
+                    icon="💻">
+                </progress-card>
+                
+                <progress-card 
+                    title="CSS Mastery" 
+                    value="60" 
+                    max="100" 
+                    color="#2196F3"
+                    icon="🎨">
+                </progress-card>
+                
+                <progress-card 
+                    title="Project Progress" 
+                    value="30" 
+                    max="100" 
+                    color="#FF9800"
+                    icon="🚧">
+                </progress-card>
+            </div>
+            
+         
+       <script type="text/javascript" src="https://syndication.inc.hp.com/inpage/contentid.min.js#Yz1zaG93Y2FzZS9pbi9lbiZtPUlCU0wmY2M9aW4mcD0yLVNJVUQtNDMyNA"></script>
+
+<script type="text/javascript" src="https://syndication.inc.hp.com/inpage/contentid.min.js#Yz1zaG93Y2FzZS9pbi9lbi9sYXB0b3BzLXRhYmxldHMvYWktc29sdXRpb25zJm09SUJTTCZjYz1pbiZwPTItU0lVRC00MzI0"></script>
+
+        
+        
+       
+    </div>
+
+   </body>
+</html>
